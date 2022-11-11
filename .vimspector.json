@@ -1,0 +1,25 @@
+{
+  "configurations": {
+    "cpptools (gdb)": {
+        "adapter": "vscode-cpptools",
+        "variables": {
+            "BUILDME": {
+                "shell": "ninja",
+                "cwd": "${workspaceRoot}/build"
+            }
+        },
+        "breakpoints": {
+            "exception": {
+                "all": "Y"
+            }
+        },
+        "configuration": {
+            "request": "launch",
+            "program": "${workspaceRoot}/build/pcl_voxel_veri",
+            "cwd": "${workspaceRoot}/build",
+            "stopAtEntry": true,
+            "MIMode": "gdb"
+        }
+    }
+  }
+}
